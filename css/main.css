@@ -125,30 +125,37 @@ ul {
   display: none;
   flex-direction: column;
   position: absolute;
-  background-color: #ddd;
+  background-color: #eee;
   right: 0;
-  padding: 10px;
+  padding: 0;
+  min-width: 200px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.ul2 li a span {
-  line-height: 1.8;
-  padding: 20px;
-  font-size: 30px;
-  font-family: "Cairo", sans-serif;
-  font-weight: 600;
-  color: #21243d;
-}
+
 .ul2 li a {
   text-decoration: none;
+  line-height: 1.6;
+  font-weight: 600;
+  padding: 10px;
+  display: block;
+  font-size: 30px;
+  font-family: "Cairo", sans-serif;
+  color: #21243d;
+}
+.ul2 li {
+  text-align: center;
+}
+.nav .ul2 li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
 }
 .nav div::after {
   content: "";
   position: absolute;
-  border-color: transparent transparent #ddd transparent;
+  border-color: transparent transparent #eee transparent;
   border-width: 20px;
   border-style: solid;
   top: calc(100% + -24px);
