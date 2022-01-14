@@ -287,12 +287,16 @@ ul {
     margin-left: 30px;
   }
 }
-.landing-page .two-arrows {
+.two-arrows {
   animation-name: arrow;
   animation-duration: 1s;
   animation-fill-mode: none;
   animation-direction: normal;
   animation-iteration-count: infinite;
+}
+.arrows-div {
+  margin: 0 auto;
+  width: fit-content;
 }
 /* Arrows Animation */
 @keyframes arrow {
@@ -324,17 +328,16 @@ ul {
   padding: 60px 0;
 }
 .skills .cards {
-  padding: 120px 0;
+  padding: 120px 0 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
   column-gap: 30px;
   row-gap: 120px;
 }
 @media (max-width: 767px) {
-  .skills .cards {
-    grid-template-columns: repeat(auto-fill, 330px);
-    justify-content: center;
+  .skills .container {
+    padding: 0 60px;
   }
 }
 .skills .cards:not(::first-child) {
