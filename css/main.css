@@ -170,7 +170,7 @@ ul {
 }
 .ul2 li a {
   text-decoration: none;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 600;
   padding: 10px;
   display: block;
@@ -410,6 +410,12 @@ ul {
     font-weight: 500;
     max-width: 500px;
     width: 324px;
+  }
+  .about .about-content {
+    grid-row-gap: 25px;
+  }
+  .about .about-content .about-img img {
+    width: 200px;
   }
 }
 /* End About */
