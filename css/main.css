@@ -14,6 +14,14 @@ html {
 body {
   font-family: "Heebo", sans-serif;
 }
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -243,6 +251,7 @@ ul {
 .landing-page .image img {
   width: 500px;
 }
+
 .landing-page a {
   margin: 0 auto;
   grid-area: arrow;
