@@ -405,11 +405,11 @@ ul {
   .about .about-content .about-txt {
     grid-area: about-txt;
     padding: 20px;
-    font-size: 27px;
-    line-height: 37px;
+    font-size: 25px;
+    line-height: 33px;
     font-weight: 500;
     max-width: 500px;
-    width: 350px;
+    width: 320px;
   }
 }
 /* End About */
