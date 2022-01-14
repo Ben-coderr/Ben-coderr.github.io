@@ -57,6 +57,33 @@ ul {
   }
 }
 /* End Global Rules */
+/* Start Special Heading */
+.special-header {
+  position: relative;
+  margin: 0px auto 60px;
+  width: fit-content;
+}
+.special-header::after {
+  content: "";
+  height: 7px;
+  width: 50%;
+  position: absolute;
+  background-color: #ffb388;
+  left: 25%;
+  bottom: -15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.special-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--mine-color);
+}
+/* End Special Heading */
 /* Start Header */
 .header .container {
   height: 100px;
@@ -135,10 +162,9 @@ ul {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-
 .ul2 li a {
   text-decoration: none;
-  line-height: 1.6;
+  line-height: 1.4;
   font-weight: 600;
   padding: 10px;
   display: block;
@@ -182,6 +208,7 @@ ul {
   }
 }
 /* End Header */
+/* Strat Landing Page */
 .landing-page .container {
   display: grid;
   grid-template-areas:
@@ -266,8 +293,8 @@ ul {
   animation-fill-mode: none;
   animation-direction: normal;
   animation-iteration-count: infinite;
-  /* animation-direction: alternate; */
 }
+/* Arrows Animation */
 @keyframes arrow {
   0% {
     transform: translateY(0px);
@@ -291,3 +318,63 @@ ul {
     -o-transform: translateY(0px);
   }
 }
+/* End Landing Page */
+/* Start Skills */
+.skills {
+  padding: 60px 0;
+}
+.skills .cards {
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 120px;
+}
+@media (max-width: 767px) {
+  .skills .cards {
+    grid-template-columns: repeat(auto-fill, 330px);
+    justify-content: center;
+  }
+}
+.skills .cards:not(::first-child) {
+  margin-top: 50px;
+}
+.skills .cards .card .image {
+  position: relative;
+  top: -50%;
+}
+.skills .cards .card .image img {
+  width: 200px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.skills .cards .card .card-content {
+  background-color: #f6f6f6;
+  height: 260px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: relative;
+  top: 0;
+}
+.skills .cards .card .card-content h2 {
+  font-size: 30px;
+  margin: 0;
+}
+.skills .cards .card .card-content .small-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.skills .cards .card .card-content .small-img img {
+  width: 40px;
+  /* display: inline-block; */
+  margin: 20px;
+}
+/* End Skills */
