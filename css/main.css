@@ -585,17 +585,26 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
 }
 .contact-content .contact-links div {
   display: flex;
   align-items: center;
   margin-left: 20%;
   padding: 10px;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -ms-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+}
+.contact-content .contact-links div:hover {
+  background-color: #eee;
 }
 .contact-content .contact-links div a {
   margin-left: 20px;
@@ -652,8 +661,7 @@ ul {
   }
   .contact-content .contact-links {
     margin: 0 auto;
-    border-radius: 20px;
-    background-color: #f6f6f6;
+    gap: 0;
   }
   .contact-content .contact-links div {
     margin-left: 0;
