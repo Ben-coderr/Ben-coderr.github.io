@@ -760,7 +760,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  row-gap: 40px;
+  row-gap: 30px;
 }
 .footer-left {
   grid-area: a;
@@ -814,7 +814,7 @@ ul {
 }
 .copy-right {
   grid-area: c;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .copy-right p {
   font-size: 20px;
