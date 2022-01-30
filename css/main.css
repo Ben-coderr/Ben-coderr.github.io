@@ -844,3 +844,36 @@ ul {
   }
 }
 /* End Footer  */
+/* Start Scroll Button */
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: -60px;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.show {
+  right: 10px;
+}
+.up i {
+  color: #21243d;
+  font-size: 30px;
+  background-color: #ffb388;
+  padding: 10px 14px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* End Scroll Button */
