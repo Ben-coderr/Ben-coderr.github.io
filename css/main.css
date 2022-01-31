@@ -664,9 +664,7 @@ ul {
   font-size: 36px;
 }
 .contact-content .contact-links .img1 img {
-  width: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 60px;
 }
 .contact-content .contact-links .img2 img {
   width: 50px;
@@ -674,7 +672,9 @@ ul {
   margin-right: 5px;
 }
 .contact-content .contact-links .img3 img {
-  width: 60px;
+  width: 50px;
+  margin-left: 6px;
+  margin-right: 4px;
 }
 .contact-content .contact-small-txt {
   grid-area: cont-s-txt;
@@ -731,7 +731,7 @@ ul {
     margin-right: 5px;
   }
   .contact-content .contact-links .img3 img {
-    width: 50px;
+    width: 40px;
   }
   .contact-content .contact-small-txt {
     margin: 0 auto;
@@ -801,6 +801,7 @@ ul {
   font-size: 50px;
   color: var(--dark-color);
   margin-right: 25px;
+
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
@@ -842,6 +843,8 @@ ul {
   font-size: 25px;
   text-decoration: none;
   line-height: 40px;
+  font-weight: 500;
+
   color: var(--mine-color);
   font-weight: 400;
   transition: all 0.3s;
@@ -857,23 +860,37 @@ ul {
 @media (max-width: 767px) {
   .footer-content {
     grid-template-areas:
-      "a b"
-      "c c";
+      "a a b"
+      "c c c";
   }
   .footer-content .footer-left {
     display: flex;
     flex-direction: column;
     justify-content: unset;
-    row-gap: 40px;
+    row-gap: 30px;
+  }
+  .footer-content .footer-right h2 {
+    font-size: 25px;
+  }
+  .footer .footer-left .foot-link i {
+    font-size: 45px;
   }
   .footer-content .footer-right h2 {
     font-size: 25px;
   }
   .footer-content .footer-right a {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .copy-right {
+    padding-top: 10px;
   }
   .copy-right p {
-    font-size: 23px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    color: var(--dark-color);
+    line-height: 35px;
   }
 }
 /* End Footer  */
