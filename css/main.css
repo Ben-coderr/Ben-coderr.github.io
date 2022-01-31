@@ -207,17 +207,7 @@ ul {
   text-align: center;
 }
 .nav .ul2 li:not(:last-child) {
-  border-bottom: 1px solid #ddd;
-}
-.nav div::after {
-  content: "";
-  position: absolute;
-  border-color: transparent transparent var(--card-back-color) transparent;
-  border-width: 20px;
-  border-style: solid;
-  top: calc(100% + -24px);
-  right: 10px;
-  display: none;
+  border-bottom: 1px solid var(--main-back-color);
 }
 @media (max-width: 767px) {
   .ul1 {
@@ -228,16 +218,14 @@ ul {
   .nav i {
     display: block;
   }
-  .nav:hover .ul2 {
-    display: flex;
-  }
-  .nav:hover.nav div::after {
-    display: block;
-  }
   .nav > div {
     position: relative;
   }
 }
+.ul2-show {
+  display: flex;
+}
+
 /* End Header */
 /* Strat Landing Page */
 .landing-page .container {

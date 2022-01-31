@@ -37,3 +37,9 @@ dark.onclick = function () {
         navi.style.color = "black";
     }
 };
+
+let ull = document.querySelector(".ul2")
+navi.onclick = function () {
+    ull.classList.toggle("ul2-show");
+
+}
